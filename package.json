@@ -1,0 +1,46 @@
+{
+  "name": "graphloop",
+  "version": "0.1.0",
+  "description": "Live, self-curating knowledge graph engine for agents — built on the Vercel AI SDK.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "files": ["dist"],
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js", "require": "./dist/index.cjs" },
+    "./react": { "types": "./dist/react/index.d.ts", "import": "./dist/react/index.js", "require": "./dist/react/index.cjs" },
+    "./react/graph-view": { "types": "./dist/react/graph-view.d.ts", "import": "./dist/react/graph-view.js", "require": "./dist/react/graph-view.cjs" }
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "ai": "^6.0.0",
+    "zod": "^3.23.0 || ^4.0.0",
+    "react": ">=18",
+    "react-dom": ">=18",
+    "react-force-graph-2d": "^1.29.0",
+    "d3-force-3d": "^3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": { "optional": true },
+    "react-dom": { "optional": true },
+    "react-force-graph-2d": { "optional": true },
+    "d3-force-3d": { "optional": true }
+  },
+  "devDependencies": {
+    "ai": "^6.0.168",
+    "zod": "^3.23.8",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0",
+    "@types/react": "^18.3.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "@testing-library/react": "^16.0.0",
+    "jsdom": "^25.0.0"
+  }
+}
