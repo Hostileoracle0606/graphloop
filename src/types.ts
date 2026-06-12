@@ -1,4 +1,7 @@
 import type { LanguageModel } from "ai";
+import type { ProviderOptions } from "@ai-sdk/provider-utils";
+
+export type { ProviderOptions };
 
 export type EntityType =
   | "person" | "place" | "organization" | "project" | "event"
@@ -91,7 +94,7 @@ export interface EngineConfig {
   maxContextEntities?: number;
   conversationWindow?: number;
   temperature?: number;
-  providerOptions?: Record<string, unknown>;
+  providerOptions?: ProviderOptions;
   noiseNames?: Iterable<string>;
   onError?: (err: unknown) => void;
 }
