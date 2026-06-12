@@ -13,7 +13,7 @@
 
 ---
 
-`graphloop` turns a stream of text utterances into a **live, incrementally-built knowledge graph** and — critically — tells your agent exactly what it doesn't yet know.
+`GraphLoop` turns a stream of text utterances into a **live, incrementally-built knowledge graph** and — critically — tells your agent exactly what it doesn't yet know.
 
 Every `ingest()` call extracts entities and relations using your chosen model, merges them into a running `GraphState` with full contradiction handling, then immediately returns an **Agenda**: which entities are thin, which relations are uncertain, and which entity pairs could be bridged. The agent reads the agenda to decide its next question. That answer flows back into the graph. The loop closes.
 
