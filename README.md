@@ -1,6 +1,6 @@
 <div align="center">
 
-# graphloop
+# GraphLoop
 
 **Live, self-curating knowledge graph engine for AI agents**
 
