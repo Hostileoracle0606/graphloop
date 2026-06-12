@@ -12,6 +12,6 @@ describe("InMemoryStorage", () => {
       mentions: 1, firstSeen: "t", lastSeen: "t",
     };
     await s.save(state);
-    expect((await s.load())?.entities["maya"].name).toBe("Maya");
+    expect((await s.load())?.entities["maya"]!.name).toBe("Maya");
   });
 });

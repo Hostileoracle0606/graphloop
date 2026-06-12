@@ -22,8 +22,8 @@ describe("buildAgenda", () => {
       relations: [{ source: "Maya", target: "Atlas", label: "on" }],
     });
     const agenda = buildAgenda(next, []);
-    expect(agenda.uncertainRelations[0]).toMatchObject({ source: "Maya", label: "on", target: "Atlas" });
-    expect(agenda.uncertainRelations[0].score).toBeGreaterThanOrEqual(2);
+    expect(agenda.uncertainRelations[0]!).toMatchObject({ source: "Maya", label: "on", target: "Atlas" });
+    expect(agenda.uncertainRelations[0]!.score).toBeGreaterThanOrEqual(2);
   });
 
   test("proposes a bridge between two entities sharing a neighbor but unlinked", () => {
