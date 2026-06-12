@@ -278,11 +278,7 @@ import { GraphView, GraphMinimap, GraphLegend } from "graphloop/react/graph-view
 **What's included:** core engine, React bindings (`useLiveGraph`), force-directed renderer (`GraphView`), in-memory storage.
 
 **Deferred to v0.2+:**
-- Voice/audio adapter (Gemini Live, WebRTC transcript feeds)
-- Persistence backends (Supabase, Postgres, Redis) as official packages
-- Vue and Svelte bindings
-- Streaming extraction (`streamObject` for partial entity pop-in mid-utterance)
-- Obsidian/Markdown export
+- **Graph RAG retrieval:** relevance-ranked selection and graph-neighborhood retrieval for loading compact memory slices.
 
 ---
 
